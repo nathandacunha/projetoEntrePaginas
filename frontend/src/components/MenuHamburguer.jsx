@@ -1,4 +1,5 @@
 import "../styles/MenuHamburguerBotao.css";
+import '../styles/App.css';
 
 function MenuHamburguerBotao({aberto, onClick}) {
     return (
