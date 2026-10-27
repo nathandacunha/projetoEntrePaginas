@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+}
+
+.container_lado_a_lado {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;  
+    align-items: center;
+}
+
+.formulario_cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 300px;
+    padding: 2rem;
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario_cadastro h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+/* Estilização do button submit*/
+
+
+.formulario_cadastro button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: red;
+    border-radius: 30px;
+    margin-top: 15px;
+
+    min-height: 35px;
+    font-size: 18px;
+    font-weight: 400;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.formulario_cadastro button:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+/* Estilização de Esqueceu senha e possui login?*/
+
+.formulario_cadastro a {
+    font-size: 12px;
+    margin-top: 10px;
+    color: red;
+
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.formulario_cadastro a:hover {
+    color: blueviolet;
+}
