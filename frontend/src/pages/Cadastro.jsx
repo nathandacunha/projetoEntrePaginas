@@ -4,7 +4,7 @@ import "../styles/FormularioCadastro.css";
 function Cadastro() {
     return (
         <main className="App-Cadastro">
-            <div className = "container">
+            <div className = "cadastro_container">
                 <form className = "formulario_cadastro" method="post">
                     <h2>Cadastro</h2>
                     <label htmlFor="">Nome: </label>

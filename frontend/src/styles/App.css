@@ -5,6 +5,11 @@
 
   overflow: hidden;
 }
+/*Variaveis em css */
+:root {
+  --wallpaper-color: #D6EEFF;
+  --font-color: #AAADC4;
+}
 
 .container {
   display: flex;
@@ -13,4 +18,9 @@
 
   width: 360px;
   height: 740px;
+}
+
+.App-Cadastro {
+  background-color: var(--wallpaper-color);
+  min-height: calc(100vh - 60px);
 }
