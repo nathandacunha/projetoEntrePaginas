@@ -1,12 +1,14 @@
 import '../src/styles/App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <section className='App'>
-      <header className='App-header'>
-        <h1>Olá, mundo!</h1>
-      </header>
-    </section>
+    <>
+      <NavBar titulo = "navbar" />
+      <main>
+        <h1>Teste</h1>
+      </main>
+    </>
   );
 }
 
