@@ -8,7 +8,6 @@ function App() {
       <NavBar titulo = "navbar" />
       <main>
         <Cadastro titulo = "formulario_cadastro">
-            
         </Cadastro>
       </main>
     </>
