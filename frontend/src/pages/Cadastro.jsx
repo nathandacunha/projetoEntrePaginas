@@ -20,7 +20,7 @@ function Cadastro() {
                     
                     <div className = "container_lado_a_lado">
                         <a href="#">Esqueceu sua senha?</a>
-                        <a href="#">Possui login?</a>
+                        <a href="#">Já possui login?</a>
                     </div>
                 </form>
             </div>
