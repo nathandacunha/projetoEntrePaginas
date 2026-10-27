@@ -1,3 +1,4 @@
+@import url("./App.css");
 * {
     padding: 0;
     margin: 0;
@@ -61,7 +62,7 @@
     justify-content: center;
     align-items: center;
     
-    background-color: red;
+    background-color: #8D909B;
     border-radius: 30px;
     margin-top: 15px;
 
@@ -74,7 +75,7 @@
 }
 
 .formulario_cadastro button:hover {
-    background-color: blue;
+    background-color: var(--transition-color);
     transform: scale(1.05);
 }
 
@@ -88,6 +89,6 @@
 }
 
 .formulario_cadastro a:hover {
-    color: blueviolet;
+    color: var(--transition-color);
 }
 

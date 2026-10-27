@@ -9,6 +9,7 @@
 :root {
   --wallpaper-color: #D6EEFF;
   --font-color: #AAADC4;
+  --transition-color: blueviolet;
 }
 
 .container {
