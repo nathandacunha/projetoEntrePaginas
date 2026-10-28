@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     
-    background-color: #8D909B;
+    background-color: var(--color-button);
     border-radius: 30px;
     margin-top: 15px;
 
@@ -75,7 +75,7 @@
 }
 
 .formulario_cadastro button:hover {
-    background-color: var(--transition-color);
+    background-color: var(--transition-effect-hover-color);
     transform: scale(1.05);
 }
 
@@ -89,6 +89,6 @@
 }
 
 .formulario_cadastro a:hover {
-    color: var(--transition-color);
+    color: var(--transition-effect-hover-color);
 }
 

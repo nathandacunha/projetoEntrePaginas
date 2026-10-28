@@ -9,7 +9,8 @@
 :root {
   --wallpaper-color: #D6EEFF;
   --font-color: #AAADC4;
-  --transition-color: blueviolet;
+  --transition-effect-hover-color: blueviolet;
+  --color-button: #4169E1;
 }
 
 .container {
