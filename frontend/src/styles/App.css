@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
 
-  overflow: hidden;
 }
 /*Variaveis em css */
 :root {
@@ -14,6 +13,12 @@
   --transition-effect-hover-color: blueviolet;
   --color-button: #4169E1;
   --font-geral: "Rubik", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -26,6 +31,11 @@
 }
 
 .App-Cadastro {
-  background-color: var(--wallpaper-color);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
   min-height: calc(100vh - 60px);
+  background-color: var(--wallpaper-color);
 }
