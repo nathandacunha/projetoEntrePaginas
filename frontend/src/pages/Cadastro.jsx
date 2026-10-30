@@ -10,6 +10,9 @@ function Cadastro() {
                     <label htmlFor="">Nome: </label>
                     <input type="text" name="" id="" placeholder="Seu nome:...."/>
 
+                    <label htmlFor="">Email: </label>
+                    <input type="email" placeholder="Seu email:...."/>
+                    
                     <label htmlFor="">CPF: </label>
                     <input type="text" name="" id="" placeholder="Seu CPF:...."/>
 
