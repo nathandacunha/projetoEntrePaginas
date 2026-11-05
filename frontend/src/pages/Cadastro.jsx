@@ -45,16 +45,16 @@ function Cadastro() {
                     <h2>Cadastro</h2>
 
                     <label htmlFor="nome">Nome: </label>
-                    <input type="text" name="nome" id="campo_nome" value = {form.nome} onChange={handleChange} placeholder="Seu nome:...."/>
+                    <input type="text" name="nome" id="campo_nome" value = {form.nome} onChange={handleChange} required placeholder="Seu nome:...."/>
 
                     <label htmlFor="Email">Email: </label>
-                    <input type="email" name="email" id = "campo_email" value = {form.email} onChange={handleChange} placeholder="Seu email:...."/>
+                    <input type="email" name="email" id = "campo_email" value = {form.email} onChange={handleChange} required placeholder="Seu email:...."/>
                     
                     <label htmlFor="cpf">CPF: </label>
-                    <input type="text" name="cpf" id="campo_cpf" value = {form.cpf} onChange={handleChange} placeholder="Seu CPF:...."/>
+                    <input type="text" name="cpf" id="campo_cpf" value = {form.cpf} onChange={handleChange} required placeholder="Seu CPF:...."/>
                     
                     <label htmlFor="senha">Senha: </label>
-                    <input type="password" name="senha" id="campo_senha" value = {form.senha} onChange={handleChange} placeholder="Sua senha:...."/>
+                    <input type="password" name="senha" id="campo_senha" value = {form.senha} onChange={handleChange} required placeholder="Sua senha:...."/>
 
 
                     <button type="submit">Cadastrar</button>
