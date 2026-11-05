@@ -29,11 +29,11 @@ function Cadastro() {
                 return;
             } else {
                 const dados = await resposta.json();
-                setErro(dados.erro || 'Erro ao cadastrar');
+                setErro(dados.error || 'Erro ao cadastrar');
                 return;
             }
-            
-        } catch {
+        } catch (error) {
+            console.error(error);
             setErro('Não foi possivel conectar ao servidor');
         }
     }
@@ -52,9 +52,10 @@ function Cadastro() {
                     
                     <label htmlFor="cpf">CPF: </label>
                     <input type="text" name="cpf" id="campo_cpf" value = {form.cpf} onChange={handleChange} placeholder="Seu CPF:...."/>
-
+                    
                     <label htmlFor="senha">Senha: </label>
                     <input type="password" name="senha" id="campo_senha" value = {form.senha} onChange={handleChange} placeholder="Sua senha:...."/>
+
 
                     <button type="submit">Cadastrar</button>
                     
