@@ -44,7 +44,6 @@ function Login() {
     return(
         <main className="App-Login">
             <div className="login_container">
-<<<<<<< HEAD
                 <form onSubmit={handleSubmit}>
                     <h2>Login</h2>
 
