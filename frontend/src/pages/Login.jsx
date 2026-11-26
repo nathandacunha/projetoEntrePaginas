@@ -44,6 +44,7 @@ function Login() {
     return(
         <main className="App-Login">
             <div className="login_container">
+<<<<<<< HEAD
                 <form onSubmit={handleSubmit}>
                     <h2>Login</h2>
 
@@ -55,10 +56,20 @@ function Login() {
 
                     {erro && <p>{erro}</p>}
                     {sucesso && <p>Login realizado com sucesso!</p>}
+=======
+                <form className ="formulario_login" method="post">
+                    <h2>Login</h2>
+
+                    <label htmlFor="cpf">CPF</label>
+                    <input type="text" name="cpf" id="campo_cpf" required/>
+
+                    <label htmlFor="senha">Senha</label>
+                    <input type="password" name="senha" id="campo_senha" required/>
+>>>>>>> 3063a74a5fb1d5c0bfe7882aef621d1fe84946c5
 
                     <button type="submit">Logar-se</button>
 
-                    <div className="container_ao_lado">
+                    <div className="container_lado_a_lado">
                         <a href="#">Esqueceu sua senha?</a>
                         <a href="#">Já possui uma conta?</a>
                     </div>
