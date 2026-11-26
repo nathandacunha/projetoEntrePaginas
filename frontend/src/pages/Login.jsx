@@ -55,13 +55,6 @@ function Login() {
 
                     {erro && <p>{erro}</p>}
                     {sucesso && <p>Login realizado com sucesso!</p>}
-
-                    <button type="submit">Logar-se</button>
-
-                    <div className="container_ao_lado">
-                        <a href="#">Esqueceu sua senha?</a>
-                        <a href="#">Já possui uma conta?</a>
-                    </div>
                 </form>
             </div>
         </main>

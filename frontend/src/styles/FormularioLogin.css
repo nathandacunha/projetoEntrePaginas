@@ -1,0 +1,117 @@
+@import url("./App.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: calc(100vh - 60px);
+}
+
+.container_lado_a_lado {
+    display: flex;
+    flex-direction: row;
+    gap: 21.5px;
+
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* container de login */
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: calc(100vh-60px);
+    margin-top: 3rem;
+}
+
+/* formulario de login  */
+
+.formulario_login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 300px;
+    padding: 2rem;
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario_login h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.formulario_login label {
+    font-size: 18.5px;
+    font-weight: 400;
+
+    font-family: "Rubik", sans-serif;
+}
+
+/* Estilização do button submit*/
+
+
+.formulario_login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-button);
+    border-radius: 30px;
+    margin-top: 15px;
+
+    min-height: 35px;
+    font-size: 18px;
+    font-weight: 400;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    color: white;
+}
+
+.formulario_login button:hover {
+    background-color: var(--transition-effect-hover-color);
+    transform: scale(1.05);
+}
+
+/* Estilização de Esqueceu senha e possui login?*/
+
+.formulario_login a {
+    font-size: 14.5px;
+
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.formulario_login a:hover {
+    color: var(--transition-effect-hover-color);
+}
+
+/* Estilização do campo de formulario */
+
+.formulario_login input {
+    background-color: #eeee;
+    border-radius:10px;
+    padding: 7.5px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
