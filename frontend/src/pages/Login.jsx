@@ -60,7 +60,7 @@ function Login() {
 
                     <div className="container_ao_lado">
                         <a href="#">Esqueceu sua senha?</a>
-                        <a href="#">Já possui uma conta?</a>
+                        <a href="#">Não possui uma conta?</a>
                     </div>
                 </form>
             </div>
