@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Button from '@mui/material/Button';
 import "../styles/FormularioCadastro.css";
 
 function Cadastro() {
@@ -57,7 +58,7 @@ function Cadastro() {
                     <input type="password" name="senha" id="campo_senha" value = {form.senha} onChange={handleChange} required placeholder="Sua senha:...."/>
 
 
-                    <button type="submit">Cadastrar</button>
+                    <Button variant="contained" type="submit">Logar-se</Button>
                     
                     {/* renderizar uma mensagem de erro na tela apenas se a variável erro existir e for verdadeira */}
                     {erro && <p>{erro}</p>}

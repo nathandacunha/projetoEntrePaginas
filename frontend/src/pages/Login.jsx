@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
 import "../styles/FormularioLogin.css";
 
 function Login() {
@@ -56,7 +57,7 @@ function Login() {
                     {erro && <p>{erro}</p>}
                     {sucesso && <p>Login realizado com sucesso!</p>}
 
-                    <button type="submit">Logar-se</button>
+                    <Button variant="contained" type="submit">Logar-se</Button>
 
                     <div className="container_ao_lado">
                         <a href="#">Esqueceu sua senha?</a>
