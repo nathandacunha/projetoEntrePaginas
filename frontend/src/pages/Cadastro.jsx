@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import AlertMessage from '../components/AlertMessage';
 import "../styles/FormularioCadastro.css";
 
 function Cadastro() {
@@ -30,9 +31,10 @@ function Cadastro() {
                 return;
             } else {
                 const dados = await resposta.json();
-                setErro(dados.error || 'Erro ao cadastrar');
+                setErro(dados.error || `E-mail ou CPF já está cadastrado.`);
                 return;
             }
+
         } catch (error) {
             console.error(error);
             setErro('Não foi possivel conectar ao servidor');
@@ -58,10 +60,10 @@ function Cadastro() {
                     <input type="password" name="senha" id="campo_senha" value = {form.senha} onChange={handleChange} required placeholder="Sua senha:...."/>
 
 
-                    <Button variant="contained" type="submit">Logar-se</Button>
+                    <Button variant="contained" type="submit">Cadastrar-se</Button>
                     
                     {/* renderizar uma mensagem de erro na tela apenas se a variável erro existir e for verdadeira */}
-                    {erro && <p>{erro}</p>}
+                    <AlertMessage mensagem={erro} />
 
                     <div className = "container_lado_a_lado">
                         <a href="#">Esqueceu sua senha?</a>
