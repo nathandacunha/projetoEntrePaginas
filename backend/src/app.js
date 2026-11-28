@@ -5,6 +5,7 @@ import cadastro from './routers/cadastro.js';
 import { tratadorDeErros } from './middlewares/tratadorDeErros.js';
 import session from 'express-session';
 import login from './routers/login.js';
+import logout from './routers/logout.js';
 
 const app = express();
 
@@ -39,7 +40,7 @@ app.get('/api/health', (req, res) => {
 // como o router define post('/'), o caminho completo fica /api/auth/cadastro
 app.use('/api/auth/cadastro', cadastro);
 app.use('/api/auth/login', login);
-
+app.use('/api/auth/logout', logout);
 app.use(tratadorDeErros);
 
 export default app;
