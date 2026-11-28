@@ -5,6 +5,7 @@ import Cadastro from './pages/Cadastro';
 import Login from './pages/Login';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import QuemSomos from './pages/QuemSomos';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />}/>
         <Route path="/login" element={<Login />}/>
         <Route path='/home' element={<Home />} />
+        <Route path="/quemSomos" element={<QuemSomos />} />
       </Routes>
       <Footer />
     </>
