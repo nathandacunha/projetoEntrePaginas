@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
+import ErrorMessage from '../components/ErrorMessage.jsx';
 import "../styles/FormularioLogin.css";
 
 function Login() {
@@ -31,7 +32,7 @@ function Login() {
             const dados = await resposta.json();
 
             if (!resposta.ok) {
-                setErro(dados.erro || 'Erro ao fazer login');
+                setErro(dados.erro || 'CPF ou senha estão incorretos.');
                 return;
             }
 
@@ -54,7 +55,7 @@ function Login() {
                     <label htmlFor="campo_senha">Senha</label>
                     <input type="password" name="senha" id="campo_senha" value = {form.senha} onChange={handleChange} required/>
 
-                    {erro && <p>{erro}</p>}
+                    <ErrorMessage mensagem={erro} />
                     {sucesso && <p>Login realizado com sucesso!</p>}
 
                     <Button variant="contained" type="submit">Logar-se</Button>
