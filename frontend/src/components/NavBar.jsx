@@ -15,8 +15,8 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const paginas = [
     { nome: 'Início', caminho: '/QuemSomos'},
-    { nome: 'Login', caminho: '/login' },
     { nome: 'Cadastro', caminho: '/cadastro' },
+    { nome: 'Login', caminho: '/login' },
 ];
 
 function NavBar() {
